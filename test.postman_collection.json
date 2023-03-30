@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "aa087d09-5097-4577-a776-1f1275350e74",
+		"name": "Infomed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://infomed.ekamat.es:7048/BC140/OData/Company(",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic RFlOQU1JQ1M6czI2ZGdTMUQxZGc=",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://infomed.ekamat.es:7048/BC140/OData/Company('INFOMED%20SOFTWARE%20S.L')//EnviosClientes?$filter=Customer_No eq '03434'",
+					"protocol": "https",
+					"host": [
+						"infomed",
+						"ekamat",
+						"es"
+					],
+					"port": "7048",
+					"path": [
+						"BC140",
+						"OData",
+						"Company('INFOMED%20SOFTWARE%20S.L')",
+						"",
+						"EnviosClientes"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "Customer_No eq '03434'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
